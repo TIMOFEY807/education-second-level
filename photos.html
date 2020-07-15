@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Фотографии пользователей</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <div class="page-header__wrapper">
+                <a class="page-header__logo">
+                    <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип фотогалереи «PINK»">
+                </a>
+                <button class="page-header__close" type="button">Закрыть</button>
+            </div>
+            <nav class="main-nav">
+                <button class="main-nav__toogle" type="button">Открыть меню</button>
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item site-list__item--active">
+                        <a>Фотографии</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="form.html">Конкурс</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">HTML Academy</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="foto__page-main">
+
+            <header class="photos">
+                <h1 class="foto__page-main__title">Фотографии пользователей</h1>
+            </header>
+
+            <section class="photos-ann">
+                <p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+
+                </p>
+                <img class="photos-ann ann-image" src="img/panorama.jpg" width="660" height="509" alt="Панорама дня">
+                <div class="photos-ann__wrapper">
+                    <h3 class="photos-ann__name">Анна</h3>
+                    <time datetime="2020-07-15" class="photos-ann__time">(5 минут назад) </time>
+                </div>
+                <p class="photos-ann__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
+                    задавайте свои вопросы!
+                </p>
+                <button class="photos-ann__like">Нравится:</button>
+                <div class="photos-ann__link">Панорама дня</div>
+            </section>
+
+            <div class="snippet">
+                <img class="snippet__photo-1" src="img/photo-1.jpg" width="300" height="300" alt="Видеокамера">
+                <div class="snippet__wrapper">
+                    <h3 class="snippet__name">Левон</h3>
+                    <time datetime="2020-07-15" class="snippet__time">(5 часов назад)</time>
+                </div>
+                <p class="snippet__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <button class="snippet__like">Нравится:</button>
+            </div>
+
+            <div class="snippet">
+                <img class="snippet__photo-2" src="img/photo-2.jpg" width="300" height="300" alt="Ударная уставновка">
+                <div class="snippet__wrapper">
+                    <h3 class="snippet__name">Антон</h3>
+                    <time datetime="2020-07-15" class="snippet__time">(12 часов назад)</time>
+                </div>
+                <p class="snippet__comment">Соседи будут рады!</p>
+                <button class="snippet__like">Нравится:</button>
+            </div>
+
+            <div class="snippet">
+                <img class="snippet__photo-2" src="img/photo-3.jpg" width="300" height="300" alt="Вид из окна">
+                <div class="snippet__wrapper">
+                    <h3 class="snippet__name">Борис</h3>
+                    <time datetime="2020-07-15" class="snippet__time">(20 часов назад)</time>
+                </div>
+                <p class="snippet__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <button class="snippet__like">Нравится:</button>
+            </div>
+
+            <div class="snippet">
+                <img class="snippet__photo-2" src="img/photo-4.jpg" width="300" height="300" alt="Кубанская бахча">
+                <div class="snippet__wrapper">
+                    <h3 class="snippet__name">Сергей</h3>
+                    <time datetime="2020-07-15" class="snippet__time">(25 часов назад)</time>
+                </div>
+                <p class="snippet__comment">Самая кубанская в мире!</p>
+                <button class="snippet__like">Нравится:</button>
+            </div>
+
+            <div class="snippet">
+                <img class="snippet__photo-2" src="img/photo-5.jpg" width="300" height="300" alt="Горы">
+                <div class="snippet__wrapper">
+                    <h3 class="snippet__name">Максим</h3>
+                    <time datetime="2020-07-15" class="snippet__time">(40 часов назад)</time>
+                </div>
+                <p class="snippet__comment">Где снег-то?</p>
+                <button class="snippet__like">Нравится:</button>
+            </div>
+
+            <div class="snippet">
+                <img class="snippet__photo-2" src="img/photo-6.jpg" width="300" height="300" alt="Вид из окна самолёта">
+                <div class="snippet__wrapper">
+                    <h3 class="snippet__name">Надежда</h3>
+                    <time datetime="2020-07-15" class="snippet__time">(45 часов назад)</time>
+                </div>
+                <p class="snippet__comment">Всем GM и взаимные лайки!</p>
+                <button class="snippet__like">Нравится:</button>
+            </div>
+
+            <section class="post">
+                <h2 class="post__title">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</h2>
+                <div class="post__wrapper">
+                    <img class="post__photo" src="img/photo-7.jpg" width="300" height="400" alt="Заснеженная дорога">
+                    <form class="parameters" action="https://echo.htmlacademy.ru" method="POST">
+                        <label class="visually-hidden">Размер изображения
+                            <input class="parameters__input parameters__input-icon--size" type="range" min="1" max="10" step="1">
+                        </label>
+                        <label class="visually-hidden">Заливка изображения
+                            <input class="parameters__input parameters__input-icon--fill" type="range" min="1" max="10" step="1">
+                        </label>
+                         <label class="visually-hidden">Яркость изображения
+                             <input class="parameters__input parameters__input-icon--brightness" type="range" min="1" max="10" step="1">
+                         </label>
+                        <button class="button parameters__submit" type="submit">Запостить</button>
+                        <input  class="button parameters__reser" type="reset" value="Отмена" disabled>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <a class="page-footer__logo">
+                <img class="page-footer__logo-image" src="img/logotype-footer.svg" width="147" height="40" alt="Логотип фотогалереи «PINK»">
+            </a>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social-button" href="https://telegram.com/htmlacademy"><!--Вставить svg Телеграм-->
+                        <span class="visually-hidden">Телеграм</span>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social-button" href="https://facebook.com/htmlacademy"><!--Вставить svg Фейсбук-->
+                        <span class="visually-hidden">Фейсбук</span>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social-button" href="https://youtube.com/htmlacademy"><!--Вставить svg YouTube-->
+                        <span class="visually-hidden">YouTube</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="page-footer__copyright copyright">
+                <b class="copyright__text">Разработано</b>
+                <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden"><!--Вставить svg HTML Academy-->
+                    HTML Academy</span>
+                </a>
+             </div>
+        </footer>
+    </body>
+
+</html>
